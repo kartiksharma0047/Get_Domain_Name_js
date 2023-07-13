@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Domain Name</title>
+</head>
+<!-- kartik@gmail.com -->
+
+<body>
+    <input type="email">
+    <button type="submit">Domain</button>
+    <h2></h2>
+    <script>
+        let x = document.querySelector("input");
+        let y = document.querySelector("button");
+        let z, a, b, c;
+        let d = document.querySelector("h2");
+        y.onclick = () => {
+            z = x.value;
+            a = z.indexOf("@");
+            b = z.indexOf(".com");
+            c = z.slice(a + 1, b).toUpperCase();
+            d.innerHTML=c;
+        }
+    </script>
+</body>
+
+</html>
